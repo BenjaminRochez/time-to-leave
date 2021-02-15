@@ -7,6 +7,11 @@ button, a.button--primary{
     cursor: pointer;
     vertical-align: top;
     text-decoration: none;
+
+    @include for-phone-only {
+        padding: 1.5em;
+        font-weight: bold;
+    }
 }
 
 
@@ -40,18 +45,18 @@ button, a.button--primary{
 .dropdown{
     display: inline-block;
     position: relative;
-    
+
     ul{
         opacity: 0;
         border-bottom-left-radius: 2px;
         border-bottom-right-radius: 2px;
         border: 2px solid $blue;
         border-top: 0px solid transparent;
-        
+
         display: block;
         width: 100%;
-        padding-top: 3px; 
-        
+        padding-top: 3px;
+
         transform: translateY(-10px);
 	    transition: opacity .2s ease-in, transform .3s ease-in;
 
@@ -67,7 +72,7 @@ button, a.button--primary{
 
             a{
                 @include fluid-type($min_width, $max_width, $min_sfont, $max_sfont);
-                font-weight: 600; 
+                font-weight: 600;
                 text-decoration: none;
                 width: 100%;
                 padding: 10px 0;

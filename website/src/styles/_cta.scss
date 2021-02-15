@@ -61,7 +61,6 @@
 
 .button--primary {
     @include for-phone-only {
-        height: 4em;
-        width: 20em;
+        width: 15em;
     }
 }

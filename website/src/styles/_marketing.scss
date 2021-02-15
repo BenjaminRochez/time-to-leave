@@ -21,32 +21,23 @@
     text-align: center;
 
     .button--primary{
-            margin-right: 10px;
+        margin-right: 10px;
 
-            @include for-phone-only {
-                margin-bottom: 1em;
-                margin-right: 0px;
-                height: 4em;
-                width: 20em;
-            }
+        @include for-phone-only {
+            margin-right: 0px;
+            margin-bottom: 5em;
         }
+    }
 
     .dropdown {
         margin-left: 10px;
 
         @include for-phone-only {
-            margin-left: 0px;
-            height: 4em;
-            width: 20em;
+            // NOTE: app is not phone compatible
+            display: none;
         }
     }
 
-    @include for-phone-only {
-        display: flex;
-        vertical-align: center;
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 .marketing__title {

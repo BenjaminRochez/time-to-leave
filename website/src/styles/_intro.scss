@@ -12,6 +12,7 @@
     }
 
     @include for-phone-only {
+        text-align: center;
         img{
             width: 100%;
         }
